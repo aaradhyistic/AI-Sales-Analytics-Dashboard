@@ -1,86 +1,142 @@
-# Project Title : **Sales Analytics Dashboard**
+## \# AI/ML Sales Analytics Dashboard
 
+## 
 
+## An interactive AI/ML-powered sales analytics and decision-support dashboard built using Python, Scikit-learn, SQL, Plotly and Streamlit.
 
-## Description :
+## 
 
+## \## Project Overview
 
+## 
 
-##### An interactive sales analytics dashboard that processes raw sales data, performs data cleaning and SQL-based analysis, and presents business insights through interactive Plotly visualizations using Streamlit.
+## Traditional sales dashboards mainly display historical data through charts and reports. This project extends traditional analytics by integrating machine learning models for sales forecasting, customer segmentation and anomaly detection.
 
+## 
 
+## The system processes historical sales data, performs feature engineering, trains machine learning models and presents the resulting insights through an interactive Streamlit dashboard.
 
-## Features :
+## 
 
-##### • Data cleaning and preprocessing
+## \## Key Features
 
-##### • SQL-based data analysis
+## 
 
-##### • Interactive dashboard
+## \- Sales and profit analysis
 
-##### • Sales and profit KPIs
+## \- Interactive sales dashboards
 
-##### • Monthly sales trends
+## \- Time-series feature engineering
 
-##### • Category analysis
+## \- Sales forecasting using Random Forest Regression
 
-##### • Regional analysis
+## \- Customer segmentation using RFM analysis and K-Means clustering
 
-##### • Top product analysis
+## \- Anomaly detection using Isolation Forest
 
-##### • Interactive filters
+## \- Model evaluation using MAE, RMSE, R² and MAPE
 
-##### • Filtered data download
+## \- Feature importance analysis
 
+## \- Actual vs predicted sales visualization
 
+## \- Interactive Streamlit interface
 
-## Technologies :
+## 
 
-##### Python
+## \## Machine Learning Components
 
-##### Pandas
+## 
 
-##### SQL
+## \### 1. Sales Forecasting
 
-##### SQLite
+## 
 
-##### Plotly
+## Random Forest Regression is used to predict future sales using temporal and historical sales features such as:
 
-##### Streamlit
+## 
 
+## \- Month
 
+## \- Quarter
 
-## Workflow :
+## \- Previous month sales
 
+## \- Lagged sales
 
+## \- Rolling averages
 
-##### Raw CSV
+## 
 
-##### &#x20;  ↓
+## \### 2. Customer Segmentation
 
-##### Data Cleaning
+## 
 
-##### &#x20;  ↓
+## RFM analysis is used to represent customer purchasing behavior using:
 
-##### Cleaned Dataset
+## 
 
-##### &#x20;  ↓
+## \- Recency
 
-##### SQLite Database
+## \- Frequency
 
-##### &#x20;  ↓
+## \- Monetary value
 
-##### SQL Queries
+## 
 
-##### &#x20;  ↓
+## K-Means clustering is then used to group customers with similar purchasing patterns.
 
-##### Data Analysis
+## 
 
-##### &#x20;  ↓
+## \### 3. Anomaly Detection
 
-##### Plotly Visualizations
+## 
 
-##### &#x20;  ↓
+## Isolation Forest is used to identify transactions that are statistically unusual based on selected sales-related features.
 
-##### Streamlit Dashboard
+## 
+
+## An anomaly represents an unusual observation and does not necessarily indicate fraud.
+
+## 
+
+## \## Technology Stack
+
+## 
+
+## \- Python
+
+## \- Pandas
+
+## \- NumPy
+
+## \- Scikit-learn
+
+## \- SQLite
+
+## \- Plotly
+
+## \- Streamlit
+
+## \- Joblib
+
+## 
+
+## \## Project Structure
+
+## 
+
+## ├── app.py
+
+## ├── data/
+
+## ├── database/
+
+## ├── models/
+
+## ├── src/
+
+## ├── requirements.txt
+
+## └── README.md
 
