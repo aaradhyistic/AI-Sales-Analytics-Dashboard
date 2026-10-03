@@ -1,142 +1,147 @@
-## \AI/ML Sales Analytics Dashboard
+# AI Sales Analytics Dashboard
 
-## 
+An AI-powered Sales Analytics and Decision Support System built using Python, Machine Learning, SQL, and Streamlit.
 
-## An interactive AI/ML-powered sales analytics and decision-support dashboard built using Python, Scikit-learn, SQL, Plotly and Streamlit.
+---
 
-## 
+## Project Overview
 
-## \Project Overview
+Businesses generate large amounts of sales data, but analyzing this data manually can make it difficult to identify trends, predict future sales, understand customer behavior, and detect unusual transactions.
 
-## 
+This project uses Data Analytics and Machine Learning techniques to analyze sales data and provide useful business insights.
 
-## Traditional sales dashboards mainly display historical data through charts and reports. This project extends traditional analytics by integrating machine learning models for sales forecasting, customer segmentation and anomaly detection.
+The system includes:
 
-## 
+- Sales forecasting
+- Customer segmentation
+- Anomaly detection
+- Sales performance analysis
+- Interactive data visualization
 
-## The system processes historical sales data, performs feature engineering, trains machine learning models and presents the resulting insights through an interactive Streamlit dashboard.
+The application is built using Python and Streamlit with Machine Learning models for predictive and analytical tasks.
 
-## 
+---
 
-## \Key Features
+## Features
 
-## 
+- Interactive sales analytics dashboard
+- Sales trend and performance analysis
+- Future sales forecasting using Random Forest
+- Customer segmentation using RFM Analysis and K-Means
+- Anomaly detection using Isolation Forest
+- Model evaluation using MAE, RMSE, R², and MAPE
+- Feature importance analysis
+- Interactive charts and visualizations
+- Data preprocessing and feature engineering
+- SQL-based data management
 
-## \- Sales and profit analysis
+---
 
-## \- Interactive sales dashboards
+## Technologies Used
 
-## \- Time-series feature engineering
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- SQL / SQLite
+- Plotly
+- Streamlit
+- Joblib
+- VS Code
 
-## \- Sales forecasting using Random Forest Regression
+---
 
-## \- Customer segmentation using RFM analysis and K-Means clustering
+## Machine Learning Models
 
-## \- Anomaly detection using Isolation Forest
+### 1. Sales Forecasting
 
-## \- Model evaluation using MAE, RMSE, R² and MAPE
+Random Forest Regression is used to predict sales based on historical sales patterns and engineered features.
 
-## \- Feature importance analysis
+Features may include:
 
-## \- Actual vs predicted sales visualization
+- Previous sales values
+- Lag features
+- Rolling averages
+- Month
+- Quarter
+- Other sales-related variables
 
-## \- Interactive Streamlit interface
+---
 
-## 
+### 2. Customer Segmentation
 
-## \Machine Learning Components
+Customer segmentation is performed using:
 
-## 
+- RFM Analysis
+- K-Means Clustering
 
-## \1. Sales Forecasting
+RFM stands for:
 
-## 
+- Recency – How recently a customer purchased
+- Frequency – How often a customer purchased
+- Monetary – How much a customer spent
 
-## Random Forest Regression is used to predict future sales using temporal and historical sales features such as:
+Customers are grouped into different clusters based on their purchasing behavior.
 
-## 
+---
 
-## \- Month
+### 3. Anomaly Detection
 
-## \- Quarter
+Isolation Forest is used to identify unusual sales transactions or records.
 
-## \- Previous month sales
+The model helps identify observations that differ significantly from normal sales patterns.
 
-## \- Lagged sales
+An anomaly does not necessarily indicate fraud; it represents a statistically unusual observation that may require further investigation.
 
-## \- Rolling averages
+---
 
-## 
+## Model Evaluation
 
-## \2. Customer Segmentation
+The forecasting model is evaluated using:
 
-## 
-
-## RFM analysis is used to represent customer purchasing behavior using:
-
-## 
-
-## \- Recency
-
-## \- Frequency
-
-## \- Monetary value
-
-## 
-
-## K-Means clustering is then used to group customers with similar purchasing patterns.
-
-## 
-
-## \3. Anomaly Detection
-
-## 
-
-## Isolation Forest is used to identify transactions that are statistically unusual based on selected sales-related features.
-
-## 
-
-## An anomaly represents an unusual observation and does not necessarily indicate fraud.
-
-## 
-
-## \## Technology Stack
-
-## 
-
-## \- Python
-
-## \- Pandas
-
-## \- NumPy
-
-## \- Scikit-learn
-
-## \- SQLite
-
-## \- Plotly
-
-## \- Streamlit
-
-## \- Joblib
-
-## 
-
-## \Project Structure
-
-## 
-
-## ├── app.py
-
-## ├── data/
-
-## ├── database/
-
-## ├── models/
-
-## ├── src/
-
-## ├── requirements.txt
-
-## └── README.md
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+- Mean Absolute Percentage Error (MAPE)
+
+The project also provides:
+
+- Actual vs Predicted Sales
+- Feature Importance
+- Customer Cluster Analysis
+- Anomaly Visualization
+
+---
+
+## Project Structure
+
+```bash
+AI-Sales-Analytics-Dashboard/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── data/
+│   └── sales_data.csv
+│
+├── models/
+│   └── trained_models/
+│
+├── src/
+│   ├── clean_data.py
+│   ├── database.py
+│   ├── feature_engineering.py
+│   ├── train_forecasting.py
+│   ├── predict.py
+│   ├── anomaly_detection.py
+│   └── customer_segmentation.py
+│
+└── screenshots/
+    ├── dashboard_overview.png
+    ├── sales_analysis.png
+    ├── forecasting.png
+    ├── customer_segmentation.png
+    └── anomaly_detection.png
 
