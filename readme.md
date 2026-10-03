@@ -1,4 +1,4 @@
-## \# AI/ML Sales Analytics Dashboard
+## \AI/ML Sales Analytics Dashboard
 
 ## 
 
@@ -6,7 +6,7 @@
 
 ## 
 
-## \## Project Overview
+## \Project Overview
 
 ## 
 
@@ -18,7 +18,7 @@
 
 ## 
 
-## \## Key Features
+## \Key Features
 
 ## 
 
@@ -44,11 +44,11 @@
 
 ## 
 
-## \## Machine Learning Components
+## \Machine Learning Components
 
 ## 
 
-## \### 1. Sales Forecasting
+## \1. Sales Forecasting
 
 ## 
 
@@ -68,7 +68,7 @@
 
 ## 
 
-## \### 2. Customer Segmentation
+## \2. Customer Segmentation
 
 ## 
 
@@ -88,7 +88,7 @@
 
 ## 
 
-## \### 3. Anomaly Detection
+## \3. Anomaly Detection
 
 ## 
 
@@ -122,7 +122,7 @@
 
 ## 
 
-## \## Project Structure
+## \Project Structure
 
 ## 
 
