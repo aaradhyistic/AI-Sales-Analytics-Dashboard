@@ -6,7 +6,7 @@ An AI-powered Sales Analytics and Decision Support System built using Python, Ma
 
 ## Project Overview
 
-Businesses generate large amounts of sales data, but analyzing this data manually can make it difficult to identify trends, predict future sales, understand customer behavior, and detect unusual transactions.
+Businesses generate large amounts of sales data, making it difficult to manually identify sales trends, predict future sales, understand customer behavior, and detect unusual transactions.
 
 This project uses Data Analytics and Machine Learning techniques to analyze sales data and provide useful business insights.
 
@@ -26,7 +26,7 @@ The application is built using Python and Streamlit with Machine Learning models
 
 - Interactive sales analytics dashboard
 - Sales trend and performance analysis
-- Future sales forecasting using Random Forest
+- Sales forecasting using Random Forest
 - Customer segmentation using RFM Analysis and K-Means
 - Anomaly detection using Isolation Forest
 - Model evaluation using MAE, RMSE, R², and MAPE
@@ -53,11 +53,11 @@ The application is built using Python and Streamlit with Machine Learning models
 
 ## Machine Learning Models
 
-### 1. Sales Forecasting
+### Sales Forecasting
 
 Random Forest Regression is used to predict sales based on historical sales patterns and engineered features.
 
-Features may include:
+The forecasting model uses features such as:
 
 - Previous sales values
 - Lag features
@@ -68,7 +68,7 @@ Features may include:
 
 ---
 
-### 2. Customer Segmentation
+### Customer Segmentation
 
 Customer segmentation is performed using:
 
@@ -81,17 +81,17 @@ RFM stands for:
 - Frequency – How often a customer purchased
 - Monetary – How much a customer spent
 
-Customers are grouped into different clusters based on their purchasing behavior.
+The customers are grouped into different clusters based on their purchasing behavior.
 
 ---
 
-### 3. Anomaly Detection
+### Anomaly Detection
 
-Isolation Forest is used to identify unusual sales transactions or records.
+Isolation Forest is used to identify unusual sales records.
 
-The model helps identify observations that differ significantly from normal sales patterns.
+The model identifies observations that differ significantly from normal sales patterns.
 
-An anomaly does not necessarily indicate fraud; it represents a statistically unusual observation that may require further investigation.
+An anomaly represents a statistically unusual observation and does not necessarily indicate fraud.
 
 ---
 
@@ -109,7 +109,7 @@ The project also provides:
 - Actual vs Predicted Sales
 - Feature Importance
 - Customer Cluster Analysis
-- Anomaly Visualization
+- Anomaly Detection Results
 
 ---
 
@@ -137,11 +137,24 @@ AI-Sales-Analytics-Dashboard/
 │   ├── predict.py
 │   ├── anomaly_detection.py
 │   └── customer_segmentation.py
-│
-└── screenshots/
-    ├── dashboard_overview.png
-    ├── sales_analysis.png
-    ├── forecasting.png
-    ├── customer_segmentation.png
-    └── anomaly_detection.png
+
+---
+
+## Future Improvements
+
+- Improve sales forecasting using advanced time-series models
+- Add real-time sales data integration
+- Add automated business recommendations
+- Improve customer segmentation
+- Enhance anomaly detection
+- Deploy on Streamlit Cloud
+- Add automated sales reports
+
+---
+
+## Author
+
+Aaradhya Tiwari
+
+
 
