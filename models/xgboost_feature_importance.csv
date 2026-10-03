@@ -1,0 +1,10 @@
+Feature,Importance
+Month,0.43508765
+Quarter,0.1912424
+Lag_6,0.12758046
+Lag_3,0.078882396
+Lag_1,0.052143496
+Rolling_Mean_6,0.041623272
+Lag_2,0.039650124
+Year,0.018788623
+Rolling_Mean_3,0.015001545
